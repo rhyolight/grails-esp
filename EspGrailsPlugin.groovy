@@ -1,17 +1,18 @@
 class EspGrailsPlugin {
     def version = 0.1
-    def dependsOn = [:]
+    def dependsOn = [core:"1.1 > *"]
 
     // TODO Fill in these fields
-    def author = "Your name"
-    def authorEmail = ""
-    def title = "Plugin summary/headline"
+    def author = "Marc Palmer"
+    def authorEmail = "marc@anyware.co.uk"
+    def title = "Imbues your application with the power of Extra Sensory Perception"
     def description = '''\\
-Brief description of the plugin.
+Allows tags and pages to magically inject code into CSS and JS files without 
+filling your HTML content with junk.
 '''
 
     // URL to the plugin's documentation
-    def documentation = "http://grails.org/Esp+Plugin"
+    def documentation = "http://grails.org/ESP+Plugin"
 
     def doWithSpring = {
         // TODO Implement runtime spring config (optional)

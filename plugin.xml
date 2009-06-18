@@ -1,0 +1,22 @@
+<plugin name='esp' version='0.1' grailsVersion='1.1.1 &gt; *'>
+  <author>Marc Palmer</author>
+  <authorEmail>marc@anyware.co.uk</authorEmail>
+  <title>Imbues your application with the power of Extra Sensory Perception</title>
+  <description>\
+Allows tags and pages to magically inject code into CSS and JS files without 
+filling your HTML content with junk.
+</description>
+  <documentation>http://grails.org/ESP+Plugin</documentation>
+  <resources>
+    <resource>Config</resource>
+    <resource>DataSource</resource>
+    <resource>ESPUrlMappings</resource>
+    <resource>org.grails.plugins.esp.ResourceController</resource>
+    <resource>TestController</resource>
+    <resource>org.grails.plugins.esp.StoreService</resource>
+    <resource>org.grails.plugins.esp.ESPTagLib</resource>
+  </resources>
+  <dependencies>
+    <plugin name='core' version='1.1 &gt; *' />
+  </dependencies>
+</plugin>
