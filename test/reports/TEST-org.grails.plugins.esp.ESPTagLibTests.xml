@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="jimi-3.local" name="org.grails.plugins.esp.ESPTagLibTests" tests="1" time="0.431" timestamp="2009-06-18T13:42:24">
+  <properties />
+  <testcase classname="org.grails.plugins.esp.ESPTagLibTests" name="testJsResourceOutputsProperTag" time="0.43" />
+  <system-out><![CDATA[--Output from testJsResourceOutputsProperTag--
+FUCK
+]]></system-out>
+  <system-err><![CDATA[--Output from testJsResourceOutputsProperTag--
+]]></system-err>
+</testsuite>

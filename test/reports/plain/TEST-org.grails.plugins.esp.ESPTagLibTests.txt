@@ -1,0 +1,11 @@
+Testsuite: org.grails.plugins.esp.ESPTagLibTests
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.431 sec
+------------- Standard Output ---------------
+--Output from testJsResourceOutputsProperTag--
+FUCK
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testJsResourceOutputsProperTag--
+------------- ---------------- ---------------
+
+Testcase: testJsResourceOutputsProperTag took 0.43 sec
