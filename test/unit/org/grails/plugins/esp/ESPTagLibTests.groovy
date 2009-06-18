@@ -14,7 +14,7 @@ class ESPTagLibTests extends TagLibUnitTestCase {
     }
 
     void testJsResourceOutputsProperTag() {
-        tagLib.metaClass.getControllerName = { -> println "FUCK"; "myController" }
+        tagLib.metaClass.getControllerName = { -> "myController" }
         tagLib.metaClass.getActionName = { -> "myAction" }
         def gCalled = false
         tagLib.metaClass.getG = { ->
