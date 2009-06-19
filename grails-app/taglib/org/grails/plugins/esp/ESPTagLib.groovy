@@ -43,6 +43,7 @@ class ESPTagLib {
      * Store content in the ESP cache for this page, only if it has not been stored already
      */
     def store = { attrs, body ->
+        log.debug "esp:store $attrs"
         if (!attrs.group) {
             attrs.group = request[REQUEST_VAR_LASTGROUP]
         }
