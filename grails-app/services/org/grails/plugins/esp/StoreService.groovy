@@ -36,4 +36,8 @@ class StoreService {
         // Need to be threadsafe here
         return lameCache["${group}|${type}"] != null
     }
+    
+    def clear(group, type) {
+        lameCache["${group}|${type}"] = null
+    }
 }

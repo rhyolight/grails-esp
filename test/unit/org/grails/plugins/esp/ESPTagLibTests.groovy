@@ -54,13 +54,26 @@ class ESPTagLibTests extends TagLibUnitTestCase {
         assertEquals 'javascript up in here', storeService.get('myController.myAction', 'js')
     }
     
-    void testStoreMultiple() {
+    void testStoreMultipleJs() {
         tagLib.resource(type:'js')
         10.times { i ->
             tagLib.store(type:'js') { "s${i};" }
         }
         assertTrue storeService.has('myController.myAction', 'js')
         assertEquals 's0;s1;s2;s3;s4;s5;s6;s7;s8;s9;', storeService.get('myController.myAction', 'js')
+    }
+    
+    void testCacheIsNotDuplicated() {
+        tagLib.resource(type:'js')
+        tagLib.store(type:'js') { 'javascript up in here' }
+        assertTrue storeService.has('myController.myAction', 'js')
+        assertEquals 'javascript up in here', storeService.get('myController.myAction', 'js')
+        // twice
+        tagLib.resource(type:'js')
+        tagLib.store(type:'js') { 'javascript up in here' }
+        assertTrue storeService.has('myController.myAction', 'js')
+        assertEquals 'javascript up in here', storeService.get('myController.myAction', 'js')
+        
     }
     
 }
