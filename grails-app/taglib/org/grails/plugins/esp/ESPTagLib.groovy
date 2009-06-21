@@ -29,6 +29,8 @@ class ESPTagLib {
         def type = attrs.type
         assert type
         
+        storeService.clear(group, type)
+        
         def args = [type:type, group:group]
         def template = attrs.template
         if (template) {

@@ -14,8 +14,6 @@ class ResourceController {
 
     
     def getCached = { 
-        println "IN ESP"
-        
         def group = params.group
 
         assert group

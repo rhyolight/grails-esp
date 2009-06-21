@@ -73,7 +73,6 @@ class ESPTagLibTests extends TagLibUnitTestCase {
         tagLib.store(type:'js') { 'javascript up in here' }
         assertTrue storeService.has('myController.myAction', 'js')
         assertEquals 'javascript up in here', storeService.get('myController.myAction', 'js')
-        
     }
     
 }
